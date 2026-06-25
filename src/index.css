@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --color-transparent-black: #00000073;
+}
+.min18pxMax24 {
+  font-size: clamp(16px, 6vw, 20px);
+}

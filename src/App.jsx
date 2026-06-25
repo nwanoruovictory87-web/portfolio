@@ -1,9 +1,18 @@
-import { useState } from "react";
-
+import Home from "./components/Home";
+import codingGif from "/images/coding.gif";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="w-full h-screen bg-green-400"></div>;
+  return (
+    <div
+      className=""
+      style={{
+        backgroundImage: `url('/images/coding.gif')`,
+        backgroundSize: "fit",
+        minHeight: "100vh",
+      }}
+    >
+      <Home />
+    </div>
+  );
 }
 
 export default App;
