@@ -5,3 +5,45 @@
 .min18pxMax24 {
   font-size: clamp(16px, 6vw, 20px);
 }
+body {
+  background-size: contain;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-body {
+  max-width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+}
+.offSwicth {
+  display: none;
+}
+.animate-in {
+  animation: slide-in forwards 500ms ease-in;
+}
+.animate-out {
+  animation: slide-out forwards 500ms ease-in;
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 100;
+    display: block;
+  }
+}
+@keyframes slide-out {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}

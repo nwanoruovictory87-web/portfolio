@@ -3,11 +3,9 @@ import codingGif from "/images/coding.gif";
 function App() {
   return (
     <div
-      className=""
+      className="image-body"
       style={{
         backgroundImage: `url('/images/coding.gif')`,
-        backgroundSize: "fit",
-        minHeight: "100vh",
       }}
     >
       <Home />
