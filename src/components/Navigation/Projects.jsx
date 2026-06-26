@@ -51,11 +51,11 @@ function Projects() {
   return (
     <>
       <div className="w-full h-fit  p-2" ref={projectsRef}>
-        <span className="min25pxMax35px  font-semibold text-gray-200   flex gap-2 items-center">
+        <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
           <h5>Work experience</h5>
           <i className="fas fa-briefcase"></i>
         </span>
-        <div className="flex mt-5 gap-10 items-center text-gray-200">
+        <div className="flex mt-5 gap-10 items-center text-gray-100">
           <span className="flex  flex-col min18pxMax24">
             <h5 className="  font-semibold">1+ years</h5>
             <h5 className="font-medium -mt-2">hands on experience</h5>
@@ -66,11 +66,11 @@ function Projects() {
           </span>
         </div>
         {/** */}
-        <div className="w-full min16pxMax19px h-fit mt-5 text-gray-200">
+        <div className="w-full min16pxMax19px h-fit mt-5 text-gray-100">
           <h5 className="min16pxMax19px font-semibold">
             Abuja, Nigeria | 2026 - Present
           </h5>
-          <ul className="mt-2 ml-6 mr-3 list-disc flex flex-col gap-3 min16pxMax19px font-medium text-gray-200">
+          <ul className="mt-2 ml-6 mr-3 list-disc flex flex-col gap-3 min16pxMax19px font-medium text-gray-100">
             <li>
               1+ years hands on experience building end-to-end web applications
               as full-stack developer
@@ -100,19 +100,19 @@ function Projects() {
         </div>
         {/** */}
         <div className="mt-10">
-          <span className="min25pxMax35px  font-semibold text-gray-200   flex gap-2 items-center">
+          <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
             <h5>Current Project</h5>
             <i className="fas fa-gears"></i>
           </span>
           {/**gallary */}
           <div className="flex flex-col gap-2 max-w-262.5">
-            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">D'Rahim Tech Innovation: </h5>
               <h5 className="font-medium ">
                 Full-stack Developer | Lead Engineer
               </h5>
             </span>
-            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Overview: </h5>
               <span>
                 <h5 className="font-medium ">
@@ -126,14 +126,14 @@ function Projects() {
                 </h5>
               </span>
             </span>
-            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Stack: </h5>
               <h5 className="font-medium ">
                 MongoDB, Postgres, Nodejs, Express, TypeScript, Tailwind CSS,
                 React, Socket.Io, Nodemailer, Paystack, Redis
               </h5>
             </span>
-            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Feaures: </h5>
               <ul className="list-disc ml-5 font-medium flex-col gap-2">
                 <li>Client onboarding + dashboard for design services</li>
@@ -148,7 +148,7 @@ function Projects() {
               className="p-4 ml-4 pt-4.5 pb-4.5 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
               onClick={preView}
             >
-              <i className="fa fa-angle-left min25pxMax35px text-gray-200 "></i>
+              <i className="fa fa-angle-left min25pxMax35px text-gray-100 "></i>
             </span>
             <img
               className="w-full h-fit min-h-75 max-h-162.5  max-w-250"
@@ -158,12 +158,12 @@ function Projects() {
               className="p-4 mr-4 pt-4.5 pb-4.5 right-0 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
               onClick={next}
             >
-              <i className="fa fa-angle-right min25pxMax35px text-gray-200 "></i>
+              <i className="fa fa-angle-right min25pxMax35px text-gray-100 "></i>
             </span>
           </div>
           {/**live link */}
           <span className="flex gap-2 mt-4 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-200">
+            <h5 className="min16pxMax19px font-semibold text-gray-100">
               Live link
             </h5>
             <a
@@ -176,7 +176,7 @@ function Projects() {
           </span>
           {/**github repo link */}
           <span className="flex gap-2 mt-2 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-200">
+            <h5 className="min16pxMax19px font-semibold text-gray-100">
               Github
             </h5>
             <a
@@ -190,17 +190,17 @@ function Projects() {
         </div>
         {/** */}
         <div className="mt-10">
-          <span className="min25pxMax35px  font-semibold text-gray-200   flex gap-2 items-center">
+          <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
             <h5>Previous Projects</h5>
             <i className="fas fa-gears"></i>
           </span>
           {/**gallary */}
           <div className="flex flex-col gap-2 max-w-262.5">
-            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">E-commerce Store Demo: </h5>
               <h5 className="font-medium ">Front-End Developer</h5>
             </span>
-            <span className="flex flex-col gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-col gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Overview: </h5>
               <span>
                 <h5 className="font-medium ">
@@ -213,11 +213,11 @@ function Projects() {
                 </h5>
               </span>
             </span>
-            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Stack: </h5>
               <h5 className="font-medium ">Tailwind Css, React, JavaScript</h5>
             </span>
-            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-col  gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Feaures: </h5>
               <ul className="list-disc ml-5 font-medium flex-col gap-2">
                 <li>Product listing, filters, and cart functionality</li>
@@ -225,7 +225,7 @@ function Projects() {
                 <li>Fully responsive mobile-first UI</li>
               </ul>
             </span>
-            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-200">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
               <h5 className="font-bold mr-1">Note: </h5>
               <h5 className="font-medium ">
                 No backend. Uses mock data to demonstrate UI/UXand checkout
@@ -238,7 +238,7 @@ function Projects() {
               className="p-4 ml-4 pt-4.5 pb-4.5 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
               onClick={preView2}
             >
-              <i className="fa fa-angle-left min25pxMax35px text-gray-200 "></i>
+              <i className="fa fa-angle-left min25pxMax35px text-gray-100 "></i>
             </span>
             <img
               className="w-full h-fit min-h-75 max-h-162.5  max-w-250"
@@ -248,12 +248,12 @@ function Projects() {
               className="p-4 mr-4 pt-4.5 pb-4.5 right-0 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
               onClick={next2}
             >
-              <i className="fa fa-angle-right min25pxMax35px text-gray-200 "></i>
+              <i className="fa fa-angle-right min25pxMax35px text-gray-100 "></i>
             </span>
           </div>
           {/**live link */}
           <span className="flex gap-2 mt-4 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-200">
+            <h5 className="min16pxMax19px font-semibold text-gray-100">
               Live link
             </h5>
             <a
@@ -266,7 +266,7 @@ function Projects() {
           </span>
           {/**github repo link */}
           <span className="flex gap-2 mt-2 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-200">
+            <h5 className="min16pxMax19px font-semibold text-gray-100">
               Github
             </h5>
             <a

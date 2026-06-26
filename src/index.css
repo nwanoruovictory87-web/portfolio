@@ -1,14 +1,19 @@
 @import "tailwindcss";
 @theme {
-  --color-transparent-black: #00000073;
+  --color-transparent-black: rgb(1, 1, 19);
 }
 .min16pxMax24 {
   font-size: clamp(16px, 6vw, 20px);
 }
-body {
-  background: url("/images/coding.gif");
+/*
+#000000
+rgb(44, 43, 43)
+background: url("/images/coding.gif");
   background-size: cover;
   background-position: center;
+  */
+body {
+  background-color: #000000;
   min-height: 100%;
   max-width: 1800px;
   margin-left: auto;
@@ -61,11 +66,11 @@ body {
   font-size: clamp(16px, 4vw, 19px);
 }
 .slideAnimation {
-  animation: slide 20s ease-in-out infinite;
+  animation: slide 10s infinite steps(2000);
 }
 @keyframes slide {
   from {
-    transform: translateX(0px);
+    transform: translateX(-10px);
   }
   to {
     transform: translateX(-2500px);

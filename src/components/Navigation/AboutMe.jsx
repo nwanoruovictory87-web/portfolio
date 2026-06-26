@@ -29,11 +29,11 @@ function AboutMe() {
           src={meImg}
         ></img>
       </span>
-      <span className="min25pxMax35px  font-semibold text-gray-200   flex gap-2 items-center">
+      <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
         <h5>About Me</h5>
         <i className="fas fa-user-tie"></i>
       </span>
-      <div className="min18pxMax24 max-w-300 font-meduim mt-3 text-gray-200 flex flex-col gap-3">
+      <div className="min18pxMax24 max-w-300 font-meduim mt-3 text-gray-100 flex flex-col gap-3">
         <h5>
           I'm a full-stack developer focused on building fast, secure, scalable
           web apps

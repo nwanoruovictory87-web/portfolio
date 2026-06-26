@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <div className="w-full overflow-hidden backdrop-blur-[5px]">
+      <div className="w-full overflow-hidden backdrop-blur-[7px]">
         <Home />
         <div className="min-h-20 bg-transparent w-full" id="projects"></div>
         <div className="bg-transparent-black">

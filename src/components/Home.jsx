@@ -37,7 +37,7 @@ function Home() {
     <>
       <div className="pt-40 w-full pb-10" id="home" ref={homeRef}>
         <div className="p-2 w-full h-fit flex justify-center">
-          <span className="flex flex-col text-gray-200 font-sans">
+          <span className="flex flex-col text-gray-100 font-sans">
             <h5 className="min25pxMax35px font-semibold">Hello</h5>
             <h5 className="min25pxMax35px font-semibold -mt-2 ml-10">
               I'm Victory
@@ -49,7 +49,7 @@ function Home() {
         </div>
         {/**skills */}
         <div className="w-full rotate-4 -ml-1 h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
-          <span className="pl-2 pr-2 flex gap-2 items-center text-gray-200">
+          <span className="pl-2 pr-2 flex gap-2 items-center text-gray-100">
             <h5 className="min25pxMax35px  font-semibold ">
               My Skills & Strong Areas
             </h5>
@@ -61,84 +61,84 @@ function Home() {
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>VanilaJs</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={typescript}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Typescript</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={reactJsStack}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>ReactJS</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={git}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Git Version Control</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={jsStack}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>JavaScript</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={nodeJs}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>NodeJs</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={mogodb}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Mongodb(NoSQL)</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={postgresql}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Postgres(SQL)</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={socketIo}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Socket.Io</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={restApi}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Rest Api</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={redis}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Redis</h5>
                 </span>
               </span>
@@ -149,34 +149,34 @@ function Home() {
                   className="w-20 h-20 rounded-2xl"
                   src={datastructures}
                 ></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Datastructures</h5>
                 </span>
               </span>
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>VanilaJs</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={typescript}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Typescript</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={reactJsStack}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>ReactJS</h5>
                 </span>
               </span>
               {/**stack */}
               <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
-                <span className="text-gray-200 min18pxMax24">
+                <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
                 </span>
               </span>

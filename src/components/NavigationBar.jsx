@@ -95,39 +95,39 @@ function NavigationBar() {
     )
       return;
     if (homePage) {
-      homeRef.current.classList.remove("text-gray-200");
+      homeRef.current.classList.remove("text-gray-100");
       homeRef.current.classList.add("text-[#0505a0]");
     } else {
       homeRef.current.classList.remove("text-[#0505a0]");
-      homeRef.current.classList.add("text-gray-200");
+      homeRef.current.classList.add("text-gray-100");
     }
     if (projectsPage) {
-      projectsRef.current.classList.remove("text-gray-200");
+      projectsRef.current.classList.remove("text-gray-100");
       projectsRef.current.classList.add("text-[#0505a0]");
     } else {
       projectsRef.current.classList.remove("text-[#0505a0]");
-      projectsRef.current.classList.add("text-gray-200");
+      projectsRef.current.classList.add("text-gray-100");
     }
     if (resumePage) {
-      resumeRef.current.classList.remove("text-gray-200");
+      resumeRef.current.classList.remove("text-gray-100");
       resumeRef.current.classList.add("text-[#0505a0]");
     } else {
       resumeRef.current.classList.remove("text-[#0505a0]");
-      resumeRef.current.classList.add("text-gray-200");
+      resumeRef.current.classList.add("text-gray-100");
     }
     if (aboutPage) {
-      aboutRef.current.classList.remove("text-gray-200");
+      aboutRef.current.classList.remove("text-gray-100");
       aboutRef.current.classList.add("text-[#0505a0]");
     } else {
       aboutRef.current.classList.remove("text-[#0505a0]");
-      aboutRef.current.classList.add("text-gray-200");
+      aboutRef.current.classList.add("text-gray-100");
     }
     if (contactPage) {
-      contactRef.current.classList.remove("text-gray-200");
+      contactRef.current.classList.remove("text-gray-100");
       contactRef.current.classList.add("text-[#0505a0]");
     } else {
       contactRef.current.classList.remove("text-[#0505a0]");
-      contactRef.current.classList.add("text-gray-200");
+      contactRef.current.classList.add("text-gray-100");
     }
   }, [homePage, projectsPage, resumePage, aboutPage, contactPage]);
   return (
@@ -135,7 +135,7 @@ function NavigationBar() {
       <div className="w-full    h-fit p-2 bg-transparent-black flex items-center">
         {/**brand name */}
         <div className="w-fit h-fit  ml-2.5">
-          <span className="w-fit flex items-center gap-2 text-[18px] font-semibold text-gray-200  font-sans">
+          <span className="w-fit flex items-center gap-2 text-[18px] font-semibold text-gray-100  font-sans">
             <span className="min-[1000px]:hidden block">
               <h5 className="text-pink-600">return</h5>
             </span>
@@ -166,7 +166,7 @@ function NavigationBar() {
         {/**naviagation */}
         <div className="ml-auto">
           {/**menu bar */}
-          <span className="text-gray-200 text-2xl block min-[800px]:hidden transition-all">
+          <span className="text-gray-100 text-2xl block min-[800px]:hidden transition-all">
             <i
               className="fa fa-bars cursor-pointer"
               onClick={menuControlFunc}
@@ -182,28 +182,28 @@ function NavigationBar() {
               <a href="#home">Home</a>
             </span>
             <span
-              className="  cursor-pointer text-gray-200"
+              className="  cursor-pointer text-gray-100"
               onClick={handleProjectsPage}
               ref={projectsRef}
             >
               <a href="#projects">Projects</a>
             </span>
             <span
-              className="  cursor-pointer text-gray-200"
+              className="  cursor-pointer text-gray-100"
               onClick={handleResumePage}
               ref={resumeRef}
             >
               <a href="#resume">Resume</a>
             </span>
             <span
-              className="  cursor-pointer text-gray-200"
+              className="  cursor-pointer text-gray-100"
               onClick={handleAboutPage}
               ref={aboutRef}
             >
               <a href="#about">About</a>
             </span>
             <span
-              className="  cursor-pointer text-gray-200"
+              className="  cursor-pointer text-gray-100"
               onClick={handleContactPage}
               ref={contactRef}
             >
@@ -215,7 +215,7 @@ function NavigationBar() {
         <div className="ml-0 min-[800px]:ml-auto mr-0 min-[800px]:mr-2.5 transition-all">
           {/**menu bar */}
           <span
-            className="hidden min-[800px]:block  min-[1130px]:hidden  text-2xl text-gray-200 transition-all"
+            className="hidden min-[800px]:block  min-[1130px]:hidden  text-2xl text-gray-100 transition-all"
             onClick={socailsMenuControlFunc}
           >
             <i className="fas fa-globe cursor-pointer"></i>
@@ -223,7 +223,7 @@ function NavigationBar() {
           {/**pc view */}
           <div className=" hidden w-0 h-0 min-[1130px]:fit min-[1130px]:w-fit  min-[1130px]:flex gap-5 font-sans text-[24px] items-center transition-all">
             <span className="cursor-none min-[1130px]:cursor-pointer">
-              <i className="fa-brands fa-github text-gray-200"></i>
+              <i className="fa-brands fa-github text-gray-100"></i>
             </span>
             <span className="cursor-none min-[1130px]:cursor-pointer">
               <i className="fa-brands fa-linkedin text-blue-400"></i>
