@@ -11,10 +11,31 @@ import typescript from "/images/typescript_stack.png";
 import vanilaJs from "/images/vanilajs_stack.jpeg";
 import nodeJs from "/images/nodejs_stack.png";
 import datastructures from "/images/datastructures_algorithim_stack.jpeg";
+import { useEffect, useState, useRef } from "react";
+import { ControlsContextApi } from "./ContextApi/Controls";
 function Home() {
+  const controls = ControlsContextApi();
+  const { setHomeInview } = controls;
+  const homeRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHomeInview(true);
+        } else {
+          setHomeInview(false);
+        }
+      },
+      { threshold: 0.5 },
+    );
+    if (homeRef.current) observer.observe(homeRef.current);
+    return () => {
+      if (homeRef.current) observer.unobserve(homeRef.current);
+    };
+  }, []);
   return (
     <>
-      <div className="pt-40 w-full pb-10" id="home">
+      <div className="pt-40 w-full pb-10" id="home" ref={homeRef}>
         <div className="p-2 w-full h-fit flex justify-center">
           <span className="flex flex-col text-gray-200 font-sans">
             <h5 className="min25pxMax35px font-semibold">Hello</h5>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const controlsContextData = createContext(null);
 
@@ -11,7 +11,43 @@ export const ControlsContextProvider = ({ children }) => {
   const [projectsInview, setProjectsInview] = useState(false);
   const [resumeInview, setResumeInview] = useState(false);
   const [aboutInview, setAboutInview] = useState(false);
+
   //console.log(chlidren);
+  function handleHomePage() {
+    setAboutPage(false);
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(true);
+  }
+  function handleProjectsPage() {
+    setAboutPage(false);
+    setResumePage(false);
+    setHomePage(false);
+    setProjectsPage(true);
+  }
+  function handleResumePage() {
+    setAboutPage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setResumePage(true);
+  }
+  function handleAboutPage() {
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setAboutPage(true);
+  }
+  useEffect(() => {
+    if (homeInview) {
+      handleHomePage();
+    } else if (projectsInview) {
+      handleProjectsPage();
+    } else if (resumeInview) {
+      handleResumePage();
+    } else if (aboutInview) {
+      handleAboutPage();
+    }
+  }, [homeInview, projectsInview, resumeInview, aboutInview]);
   return (
     <controlsContextData.Provider
       value={{
@@ -23,6 +59,10 @@ export const ControlsContextProvider = ({ children }) => {
         setResumePage,
         aboutPage,
         setAboutPage,
+        setHomeInview,
+        setProjectsInview,
+        setResumeInview,
+        setAboutInview,
       }}
     >
       {children}

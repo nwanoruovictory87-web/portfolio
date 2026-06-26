@@ -109,7 +109,7 @@ function Menu() {
           <a href="#about">About</a>
         </span>
         <span className="  cursor-pointer">
-          <a href="#contacts">Contact</a>
+          <a href="#contact">Contact</a>
         </span>
         {/**socials */}
         <span className="flex gap-2 cursor-pointer items-center ">

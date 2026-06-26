@@ -125,6 +125,8 @@ function NavigationBar() {
               <h5 className="text-green-600">{"("}</h5>
               <h5 className="text-pink-600">{"("}</h5>
               <h5 className="text-blue-600">d</h5>
+              <h5 className="text-yellow-600">{":"}</h5>
+              <h5 className="text-yellow-600 ml-1">string</h5>
               <h5 className="text-pink-600">{")"}</h5>
               <h5>{"=>"}</h5>
               <h5 className="text-blue-600">d</h5>
