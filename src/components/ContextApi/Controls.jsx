@@ -7,6 +7,10 @@ export const ControlsContextProvider = ({ children }) => {
   const [projectsPage, setProjectsPage] = useState(false);
   const [resumePage, setResumePage] = useState(false);
   const [aboutPage, setAboutPage] = useState(false);
+  const [homeInview, setHomeInview] = useState(false);
+  const [projectsInview, setProjectsInview] = useState(false);
+  const [resumeInview, setResumeInview] = useState(false);
+  const [aboutInview, setAboutInview] = useState(false);
   //console.log(chlidren);
   return (
     <controlsContextData.Provider

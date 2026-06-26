@@ -1,7 +1,7 @@
 import meImg from "/images/me.jpeg";
 function AboutMe() {
   return (
-    <div className="w-full h-fit mt-20  p-2">
+    <div className="w-full h-fit pt-20  p-2" id="about">
       <span className="">
         <img
           className="w-40 h-40 min-[500px]:w-60 min-[500px]:h-60 rounded-full"

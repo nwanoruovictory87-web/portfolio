@@ -14,7 +14,7 @@ import datastructures from "/images/datastructures_algorithim_stack.jpeg";
 function Home() {
   return (
     <>
-      <div className="mt-40 w-full pb-10">
+      <div className="pt-40 w-full pb-10" id="home">
         <div className="p-2 w-full h-fit flex justify-center">
           <span className="flex flex-col text-gray-200 font-sans">
             <h5 className="min25pxMax35px font-semibold">Hello</h5>
@@ -27,7 +27,7 @@ function Home() {
           </span>
         </div>
         {/**skills */}
-        <div className="w-full rotate-4 -ml-1  h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
+        <div className="w-full rotate-4 -ml-1 h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
           <span className="pl-2 pr-2 flex gap-2 items-center text-gray-200">
             <h5 className="min25pxMax35px  font-semibold ">
               My Skills & Strong Areas

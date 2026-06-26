@@ -157,28 +157,28 @@ function NavigationBar() {
               onClick={handleHomePage}
               ref={homeRef}
             >
-              <h5>Home</h5>
+              <a href="#home">Home</a>
             </span>
             <span
               className="  cursor-pointer text-gray-200"
               onClick={handleProjectsPage}
               ref={projectsRef}
             >
-              <h5>Projects</h5>
+              <a href="#projects">Projects</a>
             </span>
             <span
               className="  cursor-pointer text-gray-200"
               onClick={handleResumePage}
               ref={resumeRef}
             >
-              <h5>Resume</h5>
+              <a href="#resume">Resume</a>
             </span>
             <span
               className="  cursor-pointer text-gray-200"
               onClick={handleAboutPage}
               ref={aboutRef}
             >
-              <h5>About</h5>
+              <a href="#about">About</a>
             </span>
           </div>
         </div>
