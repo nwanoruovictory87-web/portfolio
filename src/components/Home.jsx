@@ -27,10 +27,13 @@ function Home() {
           </span>
         </div>
         {/**skills */}
-        <div className="w-full rotate-4 -ml-2  h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
-          <h5 className="min25pxMax35px pl-4 pr-4 font-semibold text-gray-200">
-            My Programming Stack
-          </h5>
+        <div className="w-full rotate-4 -ml-1  h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
+          <span className="pl-2 pr-2 flex gap-2 items-center text-gray-200">
+            <h5 className="min25pxMax35px  font-semibold ">
+              My Skills & Strong Areas
+            </h5>
+            <i className="fas fa-dumbbell min25pxMax35px"></i>
+          </span>
           {/**stack */}
           <div className="w-full ">
             <div className="flex slideAnimation w-full  mt-3 p-2 gap-10 items-center ">
