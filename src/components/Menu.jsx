@@ -11,41 +11,57 @@ function Menu() {
     setResumePage,
     aboutPage,
     setAboutPage,
+    contactPage,
+    setContactPage,
   } = controls;
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const resumeRef = useRef(null);
   const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
   function handleHomePage() {
+    setContactPage(false);
     setAboutPage(false);
     setResumePage(false);
     setProjectsPage(false);
     setHomePage(true);
   }
   function handleProjectsPage() {
+    setContactPage(false);
     setAboutPage(false);
     setResumePage(false);
     setHomePage(false);
     setProjectsPage(true);
   }
   function handleResumePage() {
+    setContactPage(false);
     setAboutPage(false);
     setProjectsPage(false);
     setHomePage(false);
     setResumePage(true);
   }
   function handleAboutPage() {
+    setContactPage(false);
     setResumePage(false);
     setProjectsPage(false);
     setHomePage(false);
     setAboutPage(true);
+  }
+  function handleContactPage() {
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setAboutPage(false);
+    setContactPage(true);
   }
   useEffect(() => {
     if (
       !homeRef.current ||
       !projectsRef.current ||
       !resumeRef.current ||
-      !aboutRef.current
+      !aboutRef.current ||
+      !contactRef.current
     )
       return;
     if (homePage) {
@@ -76,7 +92,14 @@ function Menu() {
       aboutRef.current.classList.remove("text-[#0505a0]");
       aboutRef.current.classList.add("text-gray-200");
     }
-  }, [homePage, projectsPage, resumePage, aboutPage]);
+    if (contactPage) {
+      contactRef.current.classList.remove("text-gray-200");
+      contactRef.current.classList.add("text-[#0505a0]");
+    } else {
+      contactRef.current.classList.remove("text-[#0505a0]");
+      contactRef.current.classList.add("text-gray-200");
+    }
+  }, [homePage, projectsPage, resumePage, aboutPage, contactPage]);
   return (
     <div className="w-[50%] min-[800px]:hidden max-w-69.25 h-fit right-0 absolute">
       <div className="bg-black flex flex-col gap-4 p-5 w-full text-gray-200 text-[20px] min-[500px]:rounded-2xl">
@@ -108,7 +131,11 @@ function Menu() {
         >
           <a href="#about">About</a>
         </span>
-        <span className="  cursor-pointer">
+        <span
+          className="  cursor-pointer"
+          ref={contactRef}
+          onClick={handleContactPage}
+        >
           <a href="#contact">Contact</a>
         </span>
         {/**socials */}
