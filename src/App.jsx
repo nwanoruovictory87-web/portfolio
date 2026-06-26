@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Projects from "./components/Navigation/Projects";
 import AboutMe from "./components/Navigation/AboutMe";
 import Footer from "./components/Footer";
+import Contact from "./components/Navigation/Contact";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <div className="bg-transparent-black">
           <Projects />
           <AboutMe />
+          <Contact />
           <Footer />
         </div>
       </div>

@@ -33,7 +33,7 @@ function AboutMe() {
         <h5>About Me</h5>
         <i className="fas fa-user-tie"></i>
       </span>
-      <div className="min18pxMax24 font-meduim mt-3 text-gray-200 flex flex-col gap-3">
+      <div className="min18pxMax24 max-w-300 font-meduim mt-3 text-gray-200 flex flex-col gap-3">
         <h5>
           I'm a full-stack developer focused on building fast, secure, scalable
           web apps
@@ -46,6 +46,10 @@ function AboutMe() {
           Currently leading dev for <strong>D'Rahim Tech Innovation</strong> -
           working with UI/UX designers to deliver pixel-perfect, functional
           products with real-time features + payments
+        </h5>
+        <h5>
+          Right now I'm focused on building fast, accessible, and scalable web
+          apps while leveling up my backend and system design skills.
         </h5>
       </div>
     </div>

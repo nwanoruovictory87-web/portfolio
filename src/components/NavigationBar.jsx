@@ -13,6 +13,8 @@ function NavigationBar() {
     setResumePage,
     aboutPage,
     setAboutPage,
+    contactPage,
+    setContactPage,
   } = controls;
   const [menuControl, setMenuControl] = useState(false);
   const [socailsMenuControl, setSocailsMenuControl] = useState(false);
@@ -22,6 +24,7 @@ function NavigationBar() {
   const projectsRef = useRef(null);
   const resumeRef = useRef(null);
   const aboutRef = useRef(null);
+  const contactRef = useRef(null);
   function menuControlFunc() {
     if (!menuRef.current) return;
     if (!menuControl) {
@@ -49,28 +52,39 @@ function NavigationBar() {
     }
   }
   function handleHomePage() {
+    setContactPage(false);
     setAboutPage(false);
     setResumePage(false);
     setProjectsPage(false);
     setHomePage(true);
   }
   function handleProjectsPage() {
+    setContactPage(false);
     setAboutPage(false);
     setResumePage(false);
     setHomePage(false);
     setProjectsPage(true);
   }
   function handleResumePage() {
+    setContactPage(false);
     setAboutPage(false);
     setProjectsPage(false);
     setHomePage(false);
     setResumePage(true);
   }
   function handleAboutPage() {
+    setContactPage(false);
     setResumePage(false);
     setProjectsPage(false);
     setHomePage(false);
     setAboutPage(true);
+  }
+  function handleContactPage() {
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setAboutPage(false);
+    setContactPage(true);
   }
   useEffect(() => {
     if (
@@ -108,7 +122,14 @@ function NavigationBar() {
       aboutRef.current.classList.remove("text-[#0505a0]");
       aboutRef.current.classList.add("text-gray-200");
     }
-  }, [homePage, projectsPage, resumePage, aboutPage]);
+    if (contactPage) {
+      contactRef.current.classList.remove("text-gray-200");
+      contactRef.current.classList.add("text-[#0505a0]");
+    } else {
+      contactRef.current.classList.remove("text-[#0505a0]");
+      contactRef.current.classList.add("text-gray-200");
+    }
+  }, [homePage, projectsPage, resumePage, aboutPage, contactPage]);
   return (
     <div className="w-full sticky top-0 z-50">
       <div className="w-full    h-fit p-2 bg-transparent-black flex items-center">
@@ -153,7 +174,7 @@ function NavigationBar() {
             ></i>
           </span>
           {/**pc view */}
-          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-7 min-[850px]:gap-10 font-sans min16pxMax24 items-center transition-all">
+          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-5 min-[850px]:gap-7 font-sans min16pxMax24 items-center transition-all">
             <span
               className="  cursor-pointer"
               onClick={handleHomePage}
@@ -181,6 +202,13 @@ function NavigationBar() {
               ref={aboutRef}
             >
               <a href="#about">About</a>
+            </span>
+            <span
+              className="  cursor-pointer text-gray-200"
+              onClick={handleContactPage}
+              ref={contactRef}
+            >
+              <a href="#contact">Contact</a>
             </span>
           </div>
         </div>
