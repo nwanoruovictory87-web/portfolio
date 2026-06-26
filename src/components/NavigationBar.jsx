@@ -1,11 +1,27 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { ControlsContextApi } from "./ContextApi/Controls";
 import SocailsMenu from "./SocailsMenu";
 import Menu from "./Menu";
 function NavigationBar() {
+  const controls = ControlsContextApi();
+  const {
+    homePage,
+    setHomePage,
+    projectsPage,
+    setProjectsPage,
+    resumePage,
+    setResumePage,
+    aboutPage,
+    setAboutPage,
+  } = controls;
   const [menuControl, setMenuControl] = useState(false);
   const [socailsMenuControl, setSocailsMenuControl] = useState(false);
   const menuRef = useRef(null);
   const socailsMenuRef = useRef(null);
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const resumeRef = useRef(null);
+  const aboutRef = useRef(null);
   function menuControlFunc() {
     if (!menuRef.current) return;
     if (!menuControl) {
@@ -32,6 +48,67 @@ function NavigationBar() {
       setSocailsMenuControl(false);
     }
   }
+  function handleHomePage() {
+    setAboutPage(false);
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(true);
+  }
+  function handleProjectsPage() {
+    setAboutPage(false);
+    setResumePage(false);
+    setHomePage(false);
+    setProjectsPage(true);
+  }
+  function handleResumePage() {
+    setAboutPage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setResumePage(true);
+  }
+  function handleAboutPage() {
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(false);
+    setAboutPage(true);
+  }
+  useEffect(() => {
+    if (
+      !homeRef.current ||
+      !projectsRef.current ||
+      !resumeRef.current ||
+      !aboutRef.current
+    )
+      return;
+    if (homePage) {
+      homeRef.current.classList.remove("text-gray-200");
+      homeRef.current.classList.add("text-[#0505a0]");
+    } else {
+      homeRef.current.classList.remove("text-[#0505a0]");
+      homeRef.current.classList.add("text-gray-200");
+    }
+    if (projectsPage) {
+      projectsRef.current.classList.remove("text-gray-200");
+      projectsRef.current.classList.add("text-[#0505a0]");
+    } else {
+      projectsRef.current.classList.remove("text-[#0505a0]");
+      projectsRef.current.classList.add("text-gray-200");
+    }
+    if (resumePage) {
+      resumeRef.current.classList.remove("text-gray-200");
+      resumeRef.current.classList.add("text-[#0505a0]");
+    } else {
+      resumeRef.current.classList.remove("text-[#0505a0]");
+      resumeRef.current.classList.add("text-gray-200");
+    }
+    if (aboutPage) {
+      aboutRef.current.classList.remove("text-gray-200");
+      aboutRef.current.classList.add("text-[#0505a0]");
+    } else {
+      aboutRef.current.classList.remove("text-[#0505a0]");
+      aboutRef.current.classList.add("text-gray-200");
+    }
+  }, [homePage, projectsPage, resumePage, aboutPage]);
   return (
     <div className=" sticky top-0 z-10">
       <div className="w-full  h-fit p-2 bg-transparent-black flex items-center">
@@ -74,17 +151,33 @@ function NavigationBar() {
             ></i>
           </span>
           {/**pc view */}
-          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-7 min-[850px]:gap-10 text-gray-200 font-sans min18pxMax24 items-center transition-all">
-            <span className=" text-[#0505a0] cursor-pointer">
+          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-7 min-[850px]:gap-10 font-sans min18pxMax24 items-center transition-all">
+            <span
+              className="  cursor-pointer"
+              onClick={handleHomePage}
+              ref={homeRef}
+            >
               <h5>Home</h5>
             </span>
-            <span className="  cursor-pointer">
+            <span
+              className="  cursor-pointer text-gray-200"
+              onClick={handleProjectsPage}
+              ref={projectsRef}
+            >
               <h5>Projects</h5>
             </span>
-            <span className="  cursor-pointer">
+            <span
+              className="  cursor-pointer text-gray-200"
+              onClick={handleResumePage}
+              ref={resumeRef}
+            >
               <h5>Resume</h5>
             </span>
-            <span className="  cursor-pointer">
+            <span
+              className="  cursor-pointer text-gray-200"
+              onClick={handleAboutPage}
+              ref={aboutRef}
+            >
               <h5>About</h5>
             </span>
           </div>
