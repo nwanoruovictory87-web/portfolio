@@ -57,86 +57,86 @@ function Home() {
           </span>
           {/**stack */}
           <div className="w-full ">
-            <div className="flex slideAnimation w-full  mt-3 p-2 gap-10 items-center ">
+            <div className="flex slideAnimation  whitespace-nowrap  mt-3 p-2 gap-10 items-center ">
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2  items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>VanilaJs</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={typescript}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Typescript</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={reactJsStack}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>ReactJS</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={git}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Git Version Control</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={jsStack}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>JavaScript</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={nodeJs}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>NodeJs</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={mogodb}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Mongodb(NoSQL)</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={postgresql}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Postgres(SQL)</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={socketIo}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Socket.Io</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={restApi}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Rest Api</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={redis}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Redis</h5>
@@ -144,7 +144,7 @@ function Home() {
               </span>
               {/**stack */}
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2  items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
                 <img
                   className="w-20 h-20 rounded-2xl"
                   src={datastructures}
@@ -153,31 +153,99 @@ function Home() {
                   <h5>Datastructures</h5>
                 </span>
               </span>
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2  items-center">
+              {/*duplicate*/}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>VanilaJs</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={typescript}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Typescript</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={reactJsStack}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>ReactJS</h5>
                 </span>
               </span>
               {/**stack */}
-              <span className="flex min-w-fit min-[800px]:min-w-62.25 gap-2 items-center">
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={git}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Git Version Control</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={jsStack}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>JavaScript</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={nodeJs}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>NodeJs</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={mogodb}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Mongodb(NoSQL)</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={postgresql}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Postgres(SQL)</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={socketIo}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Socket.Io</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={restApi}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Rest Api</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2 items-center">
+                <img className="w-20 h-20 rounded-2xl" src={redis}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Redis</h5>
+                </span>
+              </span>
+              {/**stack */}
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
+                <img
+                  className="w-20 h-20 rounded-2xl"
+                  src={datastructures}
+                ></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Datastructures</h5>
                 </span>
               </span>
             </div>

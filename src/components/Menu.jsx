@@ -101,8 +101,8 @@ function Menu() {
     }
   }, [homePage, projectsPage, resumePage, aboutPage, contactPage]);
   return (
-    <div className="w-[50%] min-[800px]:hidden max-w-69.25 h-fit right-0 absolute">
-      <div className="bg-black flex flex-col gap-4 p-5 w-full text-gray-200 text-[20px] min-[500px]:rounded-2xl">
+    <div className="w-[50%] min-[800px]:hidden max-w-69.25 h-fit right-0 absolute -mt-0.5">
+      <div className="bg-[#141414] flex flex-col gap-4 p-5 w-full text-gray-200 text-[20px] min-[500px]:rounded-2xl">
         <span
           className="  cursor-pointer"
           ref={homeRef}

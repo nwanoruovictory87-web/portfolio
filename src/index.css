@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --color-transparent-black: rgb(1, 1, 19);
+  --color-transparent-black: #01010fc9;
 }
 .min16pxMax24 {
   font-size: clamp(16px, 6vw, 20px);
@@ -66,14 +66,15 @@ body {
   font-size: clamp(16px, 4vw, 19px);
 }
 .slideAnimation {
-  animation: slide 10s infinite steps(2000);
+  animation: slide 20s linear infinite;
+  width: max-content;
 }
 @keyframes slide {
   from {
-    transform: translateX(-10px);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-2500px);
+    transform: translateX(-50%);
   }
 }
 html {

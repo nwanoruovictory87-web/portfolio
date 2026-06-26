@@ -1,7 +1,7 @@
 function SocailsMenu() {
   return (
     <div className="w-[50%] min-[800px]:block hidden min-[1130px]:hidden max-w-45  h-full right-0 absolute">
-      <div className="bg-black flex flex-col gap-4 p-5 w-full text-gray-200 text-[20px] min-[500px]:rounded-2xl">
+      <div className="bg-[#141414] flex flex-col gap-4 p-5 w-full text-gray-200 text-[20px] min-[500px]:rounded-2xl">
         {/**socials */}
         <span className="flex gap-2 cursor-pointer items-center ">
           <i className="fa-brands fa-github text-gray-200"></i>
