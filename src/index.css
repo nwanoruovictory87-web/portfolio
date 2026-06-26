@@ -2,11 +2,14 @@
 @theme {
   --color-transparent-black: #00000073;
 }
-.min18pxMax24 {
+.min16pxMax24 {
   font-size: clamp(16px, 6vw, 20px);
 }
 body {
-  background-size: contain;
+  background: url("/images/coding.gif");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
@@ -45,5 +48,26 @@ body {
   to {
     opacity: 0;
     display: none;
+  }
+}
+.min25pxMax35px {
+  font-size: clamp(25px, 5vw, 35px);
+}
+.min30pxMax45px {
+  font-size: clamp(28px, 5vw, 45px);
+}
+.min18pxMax24 {
+  font-size: clamp(18px, 4vw, 24px);
+}
+
+.slideAnimation {
+  animation: slide 20s ease-in-out infinite;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-2500px);
   }
 }

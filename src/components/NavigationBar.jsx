@@ -110,8 +110,8 @@ function NavigationBar() {
     }
   }, [homePage, projectsPage, resumePage, aboutPage]);
   return (
-    <div className=" sticky top-0 z-10">
-      <div className="w-full  h-fit p-2 bg-transparent-black flex items-center">
+    <div className="w-full sticky top-0 z-50">
+      <div className="w-full    h-fit p-2 bg-transparent-black flex items-center">
         {/**brand name */}
         <div className="w-fit h-fit  ml-2.5">
           <span className="w-fit flex items-center gap-2 text-[18px] font-semibold text-gray-200  font-sans">
@@ -151,7 +151,7 @@ function NavigationBar() {
             ></i>
           </span>
           {/**pc view */}
-          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-7 min-[850px]:gap-10 font-sans min18pxMax24 items-center transition-all">
+          <div className=" hidden min-[800px]:flex w-fit h-fit  gap-7 min-[850px]:gap-10 font-sans min16pxMax24 items-center transition-all">
             <span
               className="  cursor-pointer"
               onClick={handleHomePage}
