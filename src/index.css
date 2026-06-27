@@ -69,6 +69,9 @@ body {
   animation: slide 20s linear infinite;
   width: max-content;
 }
+.slideAnimation:hover {
+  animation-play-state: paused;
+}
 @keyframes slide {
   from {
     transform: translateX(0);

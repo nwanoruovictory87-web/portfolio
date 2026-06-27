@@ -1,31 +1,9 @@
-import { useRef, useEffect } from "react";
-import { ControlsContextApi } from "../ContextApi/Controls";
 function Contact() {
-  const controls = ControlsContextApi();
-  const { setContactInview } = controls;
-  const contactRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        console.log(entry.isIntersecting);
-        if (entry.isIntersecting) {
-          setContactInview(true);
-        } else {
-          setContactInview(false);
-        }
-      },
-      { threshold: 0.5 },
-    );
-    if (contactRef.current) observer.observe(contactRef.current);
-    return () => {
-      if (contactRef.current) observer.unobserve(contactRef.current);
-    };
-  }, []);
   return (
-    <div className="w-full h-100 pt-10  p-2" id="contact" ref={contactRef}>
+    <div className="w-full h-100 pt-10  p-2" id="contact">
       <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
         <h5>Lets Work Together</h5>
-        <i className="fas fa-phone"></i>
+        <i className="fas fa-handshake-angle"></i>
       </span>
       <span className="flex flex-col gap-1 min18pxMax24 mt-2 font-medium text-gray-100">
         <h5 className=" mr-1">
@@ -35,7 +13,7 @@ function Contact() {
           I'm open to full-time roles, freelance work, and collaborations
         </h5>
       </span>
-      <div className="min18pxMax24  max-w-300 font-meduim mt-4 text-gray-100 flex flex-col gap-3">
+      <div className="min18pxMax24  max-w-300 font-meduim mt-6 text-gray-100 flex flex-col gap-3">
         <span className="flex gap-2 items-center">
           <a
             className="border-b border-b-green-700 "

@@ -29,28 +29,10 @@ function Projects() {
     if (count2 === 0) return;
     setCount2((prevCount) => (prevCount -= 1));
   }
-  const controls = ControlsContextApi();
-  const { setProjectsInview } = controls;
-  const projectsRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setProjectsInview(true);
-        } else {
-          setProjectsInview(false);
-        }
-      },
-      { threshold: 0.3 },
-    );
-    if (projectsRef.current) observer.observe(projectsRef.current);
-    return () => {
-      if (projectsRef.current) observer.unobserve(projectsRef.current);
-    };
-  }, []);
+
   return (
     <>
-      <div className="w-full h-fit  p-2" ref={projectsRef}>
+      <div className="w-full h-fit  p-2">
         <span className="min25pxMax35px  font-semibold text-gray-100   flex gap-2 items-center">
           <h5>Work experience</h5>
           <i className="fas fa-briefcase"></i>
@@ -163,7 +145,7 @@ function Projects() {
           </div>
           {/**live link */}
           <span className="flex gap-2 mt-4 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-100">
+            <h5 className="min16pxMax19px min-w-fit font-semibold text-gray-100">
               Live link
             </h5>
             <a
@@ -176,7 +158,7 @@ function Projects() {
           </span>
           {/**github repo link */}
           <span className="flex gap-2 mt-2 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-100">
+            <h5 className="min16pxMax19px min-w-fit  font-semibold text-gray-100">
               Github
             </h5>
             <a
@@ -253,11 +235,11 @@ function Projects() {
           </div>
           {/**live link */}
           <span className="flex gap-2 mt-4 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-100">
+            <h5 className="min16pxMax19px min-w-fit font-semibold text-gray-100">
               Live link
             </h5>
             <a
-              className="text-blue-500 line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
+              className="text-blue-500   line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
               href="http://localhost:5174/D-Rahim/"
               target="_blank"
             >
@@ -266,7 +248,7 @@ function Projects() {
           </span>
           {/**github repo link */}
           <span className="flex gap-2 mt-2 items-center">
-            <h5 className="min16pxMax19px font-semibold text-gray-100">
+            <h5 className="min16pxMax19px min-w-fit  font-semibold text-gray-100">
               Github
             </h5>
             <a

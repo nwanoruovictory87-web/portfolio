@@ -15,40 +15,50 @@ import { useEffect, useState, useRef } from "react";
 import { ControlsContextApi } from "./ContextApi/Controls";
 function Home() {
   const controls = ControlsContextApi();
-  const { setHomeInview } = controls;
-  const homeRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setHomeInview(true);
-        } else {
-          setHomeInview(false);
-        }
-      },
-      { threshold: 0.5 },
-    );
-    if (homeRef.current) observer.observe(homeRef.current);
-    return () => {
-      if (homeRef.current) observer.unobserve(homeRef.current);
-    };
-  }, []);
+  const {
+    setHomePage,
+    setProjectsPage,
+    setResumePage,
+    setAboutPage,
+    setContactPage,
+  } = controls;
+  function handleHomePage() {
+    setContactPage(false);
+    setAboutPage(false);
+    setResumePage(false);
+    setProjectsPage(false);
+    setHomePage(true);
+  }
   return (
     <>
-      <div className="pt-40 w-full pb-10" id="home" ref={homeRef}>
+      <div className="pt-40 w-full pb-10" id="home">
         <div className="p-2 w-full h-fit flex justify-center">
-          <span className="flex flex-col text-gray-100 font-sans">
-            <h5 className="min25pxMax35px font-semibold">Hello</h5>
-            <h5 className="min25pxMax35px font-semibold -mt-2 ml-10">
-              I'm Victory
-            </h5>
-            <h2 className="min30pxMax45px font-bold">
-              A Full-Stack Web Developer
-            </h2>
-          </span>
+          <div>
+            <span className="flex flex-col text-gray-100 font-sans">
+              <h5 className="min25pxMax35px font-semibold">Hello!</h5>
+              <h5 className="min25pxMax35px font-semibold -mt-2 ml-10">
+                I'm Victory
+              </h5>
+              <h2 className="min30pxMax45px font-bold">
+                A Full-Stack Web Developer
+              </h2>
+            </span>
+            {/** */}
+            <div className="w-fit flex mt-6 gap-10">
+              <span
+                className="flex w-fit h-fit min18pxMax24 bg-[#5f3f02] p-4 rounded-2xl font-medium text-gray-100 cursor-pointer"
+                onClick={handleHomePage}
+              >
+                <a href="#projects">My Work</a>
+              </span>
+              <span className="flex w-fit h-fit min18pxMax24 bg-transparent-black p-4 rounded-2xl font-medium text-gray-100 cursor-pointer">
+                <h5>Download CV</h5>
+              </span>
+            </div>
+          </div>
         </div>
         {/**skills */}
-        <div className="w-full rotate-4 -ml-1 h-fit overflow-hidden pb-5 mt-40 bg-transparent-black">
+        <div className="w-full rotate-4 -ml-1 h-fit overflow-hidden pb-5 mt-30 bg-transparent-black">
           <span className="pl-2 pr-2 flex gap-2 items-center text-gray-100">
             <h5 className="min25pxMax35px  font-semibold ">
               My Skills & Strong Areas

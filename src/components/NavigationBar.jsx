@@ -91,6 +91,7 @@ function NavigationBar() {
       !homeRef.current ||
       !projectsRef.current ||
       !resumeRef.current ||
+      !contactRef.current ||
       !aboutRef.current
     )
       return;

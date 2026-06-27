@@ -1,28 +1,7 @@
 import meImg from "/images/me.jpeg";
-import { useState, useEffect, useRef } from "react";
-import { ControlsContextApi } from "../ContextApi/Controls";
 function AboutMe() {
-  const controls = ControlsContextApi();
-  const { setAboutInview } = controls;
-  const aboutRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setAboutInview(true);
-        } else {
-          setAboutInview(false);
-        }
-      },
-      { threshold: 0.5 },
-    );
-    if (aboutRef.current) observer.observe(aboutRef.current);
-    return () => {
-      if (aboutRef.current) observer.unobserve(aboutRef.current);
-    };
-  }, []);
   return (
-    <div className="w-full h-fit pt-30  p-2" id="about" ref={aboutRef}>
+    <div className="w-full h-fit pt-30  p-2" id="about">
       <span className="">
         <img
           className="w-40 h-40 min-[500px]:w-60 min-[500px]:h-60 rounded-full"
