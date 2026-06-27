@@ -22,12 +22,12 @@ function Home() {
     setAboutPage,
     setContactPage,
   } = controls;
-  function handleHomePage() {
+  function handleProjectsPage() {
     setContactPage(false);
     setAboutPage(false);
     setResumePage(false);
-    setProjectsPage(false);
-    setHomePage(true);
+    setHomePage(false);
+    setProjectsPage(true);
   }
   return (
     <>
@@ -45,12 +45,13 @@ function Home() {
             </span>
             {/** */}
             <div className="w-fit flex mt-6 gap-10">
-              <span
+              <a
+                href="#projects"
                 className="flex w-fit h-fit min18pxMax24 bg-[#5f3f02] p-4 rounded-2xl font-medium text-gray-100 cursor-pointer"
-                onClick={handleHomePage}
+                onClick={handleProjectsPage}
               >
-                <a href="#projects">My Work</a>
-              </span>
+                <a>My Work</a>
+              </a>
               <span className="flex w-fit h-fit min18pxMax24 bg-transparent-black p-4 rounded-2xl font-medium text-gray-100 cursor-pointer">
                 <h5>Download CV</h5>
               </span>
