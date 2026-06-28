@@ -223,18 +223,34 @@ function NavigationBar() {
           </span>
           {/**pc view */}
           <div className=" hidden w-0 h-0 min-[1130px]:fit min-[1130px]:w-fit  min-[1130px]:flex gap-5 font-sans text-[24px] items-center transition-all">
-            <span className="cursor-none min-[1130px]:cursor-pointer">
+            <a
+              className="cursor-none min-[1130px]:cursor-pointer"
+              href="https://github.com/nwanoruovictory87-web"
+              target="_blank"
+            >
               <i className="fa-brands fa-github text-gray-100"></i>
-            </span>
-            <span className="cursor-none min-[1130px]:cursor-pointer">
+            </a>
+            <a
+              className="cursor-none min-[1130px]:cursor-pointer"
+              href="https://www.linkedin.com/in/victory-nwanoruo-2189493b4/"
+              target="_blank"
+            >
               <i className="fa-brands fa-linkedin text-blue-400"></i>
-            </span>
-            <span className="cursor-none min-[1130px]:cursor-pointer">
+            </a>
+            <a
+              className="cursor-none min-[1130px]:cursor-pointer"
+              href="https://www.youtube.com/@CodeWithVictory01"
+              target="_blank"
+            >
               <i className="fa-brands fa-youtube text-red-600"></i>
-            </span>
-            <span className="cursor-none min-[1130px]:cursor-pointer">
+            </a>
+            <a
+              className="cursor-none min-[1130px]:cursor-pointer"
+              href="https://web.facebook.com/people/Victor-Nwanoruo/61589589896378/"
+              target="_blank"
+            >
               <i className="fa-brands fa-facebook text-blue-600"></i>
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -4,8 +4,15 @@ import d1 from "/images/D-rahim-tech5.jpg";
 import d2 from "/images/D-rahim-tech1.jpg";
 import d3 from "/images/D-rahim-tech4.jpg";
 import d4 from "/images/D-rahim-tech3.jpg";
+import e0 from "/images/electronis-store0.jpg";
+import e1 from "/images/electronis-store1.jpg";
+import e2 from "/images/electronis-store7.png";
+import e3 from "/images/electronis-store2.jpg";
+import e4 from "/images/electronis-store6.jpg";
+import e5 from "/images/electronis-store5.jpg";
 function Projects() {
   const imageList = [d1, d2, d3, d4];
+  const imageList2 = [e0, e3, e4, e1, e5, e2];
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
   const imageUrl = imageList[count];
@@ -18,8 +25,8 @@ function Projects() {
     if (count === 0) return;
     setCount((prevCount) => (prevCount -= 1));
   }
-  const imageUrl2 = imageList[count2];
-  const maxImage2 = imageList.length - 1;
+  const imageUrl2 = imageList2[count2];
+  const maxImage2 = imageList2.length - 1;
   function next2() {
     if (count2 === maxImage2) return;
     setCount2((prevCount) => (prevCount += 1));
@@ -239,10 +246,10 @@ function Projects() {
             </h5>
             <a
               className="text-blue-500   line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
-              href="http://localhost:5174/D-Rahim/"
+              href="https://nwanoruovictory87-web.github.io/Electronic-Store/"
               target="_blank"
             >
-              http://nwanoruovictory87-web.git.io/Electronics-store
+              https://nwanoruovictory87-web.github.io/Electronic-Store/
             </a>
           </span>
           {/**github repo link */}
@@ -252,10 +259,10 @@ function Projects() {
             </h5>
             <a
               className="text-blue-500 line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
-              href="http://localhost:5174/D-Rahim/"
+              href="https://github.com/nwanoruovictory87-web/Electronic-Store"
               target="_blank"
             >
-              http://github.com/nwanoruovictory87-web/Electronics-store
+              https://github.com/nwanoruovictory87-web/Electronic-Store
             </a>
           </span>
         </div>
