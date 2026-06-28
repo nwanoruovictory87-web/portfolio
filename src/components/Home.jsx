@@ -50,7 +50,7 @@ function Home() {
                 className="flex w-fit h-fit min18pxMax24 bg-[#5f3f02] p-4 rounded-2xl font-medium text-gray-100 cursor-pointer"
                 onClick={handleProjectsPage}
               >
-                <a>My Work</a>
+                <h5>My Work</h5>
               </a>
               <span className="flex w-fit h-fit min18pxMax24 bg-transparent-black p-4 rounded-2xl font-medium text-gray-100 cursor-pointer">
                 <h5>Download CV</h5>

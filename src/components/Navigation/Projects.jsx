@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { ControlsContextApi } from "../ContextApi/Controls";
+import d1 from "/images/D-rahim-tech5.jpg";
+import d2 from "/images/D-rahim-tech1.jpg";
+import d3 from "/images/D-rahim-tech4.jpg";
+import d4 from "/images/D-rahim-tech3.jpg";
 function Projects() {
-  const imageList = [
-    "/images/D-rahim-tech5.jpg",
-    "/images/D-rahim-tech1.jpg",
-    "/images/D-rahim-tech4.jpg",
-    "/images/D-rahim-tech3.jpg",
-  ];
+  const imageList = [d1, d2, d3, d4];
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
   const imageUrl = imageList[count];
