@@ -172,10 +172,10 @@ function Projects() {
             </h5>
             <a
               className="text-blue-500 line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
-              href="http://localhost:5174/D-Rahim/"
+              href="https://github.com/drahimtech-art/D-Rahim"
               target="_blank"
             >
-              http://github.com/D-Rahim-art/D-rahim
+              https://github.com/drahimtech-art/D-Rahim
             </a>
           </span>
         </div>
