@@ -194,7 +194,12 @@ function NavigationBar() {
               onClick={handleResumePage}
               ref={resumeRef}
             >
-              <a href="#resume">Resume</a>
+              <a
+                href="./public/Victory_Nwanoruo_Resume.pdf"
+                download="Victory_Nwanoruo_Resume.pdf"
+              >
+                Resume
+              </a>
             </span>
             <span
               className="  cursor-pointer text-gray-100"

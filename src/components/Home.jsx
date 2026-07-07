@@ -53,7 +53,12 @@ function Home() {
                 <h5>My Work</h5>
               </a>
               <span className="flex w-fit h-fit min18pxMax24 bg-transparent-black p-4 rounded-2xl font-medium text-gray-100 cursor-pointer">
-                <h5>Download CV</h5>
+                <a
+                  href="./public/Victory_Nwanoruo_Resume.pdf"
+                  download="Victory_Nwanoruo_Resume.pdf"
+                >
+                  Download CV
+                </a>
               </span>
             </div>
           </div>

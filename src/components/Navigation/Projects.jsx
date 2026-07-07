@@ -4,6 +4,9 @@ import d1 from "/images/D-rahim-tech5.jpg";
 import d2 from "/images/D-rahim-tech1.jpg";
 import d3 from "/images/D-rahim-tech4.jpg";
 import d4 from "/images/D-rahim-tech3.jpg";
+import d6 from "/images/D-rahim-tech6.jpg";
+import d5 from "/images/D-rahim-tech8.jpg";
+import d7 from "/images/D-rahim-tech7.jpg";
 import e0 from "/images/electronis-store0.jpg";
 import e1 from "/images/electronis-store1.jpg";
 import e2 from "/images/electronis-store7.png";
@@ -11,7 +14,7 @@ import e3 from "/images/electronis-store2.jpg";
 import e4 from "/images/electronis-store6.jpg";
 import e5 from "/images/electronis-store5.jpg";
 function Projects() {
-  const imageList = [d1, d2, d3, d4];
+  const imageList = [d1, d2, d3, d4, d5, d6, d7];
   const imageList2 = [e0, e3, e4, e1, e5, e2];
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
