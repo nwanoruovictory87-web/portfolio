@@ -1,3 +1,5 @@
+import cStack from "/images/c_stack.png";
+import bashStack from "/images/bash_stack.png";
 import jsStack from "/images/js_stack.png";
 import reactJsStack from "/images/react_stack.jpeg";
 import git from "/images/git_stack.jpeg";
@@ -76,6 +78,13 @@ function Home() {
             <div className="flex slideAnimation  whitespace-nowrap  mt-3 p-2 gap-10 items-center ">
               {/**stack */}
               <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
+                <img className="w-20 h-20 rounded-2xl" src={cStack}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Native C</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>VanilaJs</h5>
@@ -100,6 +109,13 @@ function Home() {
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
+                <img className="w-20 h-20 rounded-2xl" src={bashStack}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Bash</h5>
                 </span>
               </span>
               {/**stack */}
@@ -170,6 +186,13 @@ function Home() {
                 </span>
               </span>
               {/*duplicate*/}
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
+                <img className="w-20 h-20 rounded-2xl" src={cStack}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Native C</h5>
+                </span>
+              </span>
               <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
                 <img className="w-20 h-20 rounded-2xl" src={vanilaJs}></img>
                 <span className="text-gray-100 min18pxMax24">
@@ -195,6 +218,13 @@ function Home() {
                 <img className="w-20 h-20 rounded-2xl" src={tailwind}></img>
                 <span className="text-gray-100 min18pxMax24">
                   <h5>Tailwindcss</h5>
+                </span>
+              </span>
+              {/**stack */}
+              <span className="flex min-w-62.5 shrink-0 gap-2  items-center">
+                <img className="w-20 h-20 rounded-2xl" src={bashStack}></img>
+                <span className="text-gray-100 min18pxMax24">
+                  <h5>Bash</h5>
                 </span>
               </span>
               {/**stack */}
