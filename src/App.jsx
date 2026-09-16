@@ -1,9 +1,9 @@
-import NavigationBar from "./components/NavigationBar";
-import Home from "./components/Home";
-import Projects from "./components/Navigation/Projects";
-import AboutMe from "./components/Navigation/AboutMe";
-import Footer from "./components/Footer";
-import Contact from "./components/Navigation/Contact";
+import NavigationBar from "./shared/NavigationBar";
+import Home from "./features/Home";
+import Projects from "./features/Projects";
+import AboutMe from "./features/AboutMe";
+import Footer from "./shared/Footer";
+import Contact from "./features/Contact";
 function App() {
   return (
     <>

@@ -14,7 +14,7 @@ import vanilaJs from "/images/vanilajs_stack.jpeg";
 import nodeJs from "/images/nodejs_stack.png";
 import datastructures from "/images/datastructures_algorithim_stack.jpeg";
 import { useEffect, useState, useRef } from "react";
-import { ControlsContextApi } from "./ContextApi/Controls";
+import { ControlsContextApi } from "../ContextApi/Controls";
 function Home() {
   const controls = ControlsContextApi();
   const {

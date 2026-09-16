@@ -64,7 +64,7 @@ function Projects() {
         </span>
         <div className="flex mt-5 gap-10 items-center text-gray-100">
           <span className="flex  flex-col min18pxMax24">
-            <h5 className="  font-semibold">1+ years</h5>
+            <h5 className="  font-semibold">2+ years</h5>
             <h5 className="font-medium -mt-2">hands on experience</h5>
           </span>
           <span className="flex  flex-col min18pxMax24">
@@ -79,7 +79,7 @@ function Projects() {
           </h5>
           <ul className="mt-2 ml-6 mr-3 list-disc flex flex-col gap-3 min16pxMax19px font-medium text-gray-100">
             <li>
-              1+ years hands on experience building end-to-end web applications
+              2+ years hands on experience building end-to-end web applications
               as full-stack developer
             </li>
             <li>
