@@ -13,11 +13,17 @@ import e2 from "/images/electronis-store7.png";
 import e3 from "/images/electronis-store2.jpg";
 import e4 from "/images/electronis-store6.jpg";
 import e5 from "/images/electronis-store5.jpg";
+import g1 from "/images/gps_tracker01.png";
+import g2 from "/images/gps_tracker02.png";
+import g3 from "/images/gps_tracker03.png";
+import g4 from "/images/gps_tracker04.png";
 function Projects() {
   const imageList = [d1, d2, d3, d4, d5, d6, d7];
   const imageList2 = [e0, e3, e4, e1, e5, e2];
+  const imageList3 = [g3, g1, g4, g2];
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
   const imageUrl = imageList[count];
   const maxImage = imageList.length - 1;
   function next() {
@@ -37,6 +43,16 @@ function Projects() {
   function preView2() {
     if (count2 === 0) return;
     setCount2((prevCount) => (prevCount -= 1));
+  }
+  const imageUrl3 = imageList3[count3];
+  const maxImage3 = imageList3.length - 1;
+  function next3() {
+    if (count3 === maxImage3) return;
+    setCount3((prevCount) => (prevCount += 1));
+  }
+  function preView3() {
+    if (count3 === 0) return;
+    setCount3((prevCount) => (prevCount -= 1));
   }
 
   return (
@@ -176,6 +192,122 @@ function Projects() {
               target="_blank"
             >
               https://github.com/drahimtech-art/D-Rahim
+            </a>
+          </span>
+          {/** */}
+          <span className="min25pxMax35px mt-10  font-semibold text-gray-100   flex gap-2 items-center">
+            <h5>Current Project</h5>
+            <i className="fas fa-gears"></i>
+          </span>
+          {/**gallary */}
+          <div className="flex flex-col gap-2 max-w-262.5 ">
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
+              <h5 className="font-bold mr-1">GPS Tracking Security System: </h5>
+              <h5 className="font-medium ">
+                Full-stack Developer | Lead Engineer
+              </h5>
+            </span>
+            <span className="flex flex-col gap-1 min16pxMax19px font-semibold text-gray-100">
+              <h5 className="font-bold mr-1">Overview: </h5>
+              <span>
+                <h5 className="font-medium ">
+                  <strong>
+                    Government Secondary School Karshi GPS Tracking System
+                  </strong>{" "}
+                  is a real-time safety and location monitoring application
+                  built to protect students through instant tracking, safety
+                  check-ins, and emergency alerts.
+                </h5>
+                <h5 className="font-medium ">
+                  I engineered the entire end-to-end system architecture,
+                  implementing a dual-protocol setup using HTTP for data
+                  management and TCP Sockets for sub-millisecond real-time
+                  communication between the admin dashboard and smart watch
+                  clients.
+                </h5>
+              </span>
+            </span>
+            <span className="flex flex-wrap items-center gap-1 min16pxMax19px font-semibold text-gray-100">
+              <h5 className="font-bold mr-1">Stack: </h5>
+              <h5 className="font-medium ">
+                React, Node.js, Express, TCP Net Sockets, Leaflet, Google Maps
+                API, Gemini API, Tailwind CSS, TypeScript
+              </h5>
+            </span>
+            <span className="flex flex-col gap-1 min16pxMax19px font-semibold text-gray-100">
+              <h5 className="font-bold mr-1">Features: </h5>
+              <ul className="list-disc ml-5 font-medium flex flex-col gap-2">
+                <li>
+                  Admin dashboard for student registration, global map
+                  overviews, and live status monitoring
+                </li>
+                <li>
+                  Dual mapping engine built with Leaflet and Google Maps API for
+                  robust, pinpoint geolocation accuracy
+                </li>
+                <li>
+                  AI-driven student insights generating instant contextual
+                  overviews of a student's current location, device diagnostics,
+                  and safety status
+                </li>
+                <li>
+                  Smart watch client app featuring real-time location pings and
+                  a physical/screen emergency SOS button
+                </li>
+                <li>
+                  Dual-protocol communication framework bridging HTTP static
+                  requests with high-speed TCP socket streams
+                </li>
+                <li>
+                  Automated safety verification protocol tracking four student
+                  states (Unknown, Stable, Warning, Panic)
+                </li>
+              </ul>
+            </span>
+          </div>
+
+          <div className="w-fit h-fit mt-4 relative ml-2 mr-2">
+            <span
+              className="p-4 ml-4 pt-4.5 pb-4.5 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
+              onClick={preView3}
+            >
+              <i className="fa fa-angle-left min25pxMax35px text-gray-100 "></i>
+            </span>
+            <img
+              className="w-full h-fit min-h-75 max-h-162.5  max-w-250"
+              src={imageUrl3}
+            ></img>
+            <span
+              className="p-4 mr-4 pt-4.5 pb-4.5 right-0 bg-transparent-black rounded-full flex justify-center items-center w-fit absolute top-[40%] cursor-pointer"
+              onClick={next3}
+            >
+              <i className="fa fa-angle-right min25pxMax35px text-gray-100 "></i>
+            </span>
+          </div>
+          {/**live link */}
+          <span className="flex gap-2 mt-4 items-center">
+            <h5 className="min16pxMax19px min-w-fit font-semibold text-gray-100">
+              Live link
+            </h5>
+            <a
+              className="text-blue-500 line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
+              href="https://nwanoruovictory87-web.github.io/GSS-KARSHI-SCHOLL-PROJECT/"
+              target="_blank"
+            >
+              https://nwanoruovictory87-web.github.io/GSS-KARSHI-SCHOLL-PROJECT/
+            </a>
+          </span>
+          {/**github repo link */}
+          <span className="flex gap-2 mt-2 items-center">
+            <h5 className="min16pxMax19px min-w-fit  font-semibold text-gray-100">
+              Github
+            </h5>
+            <a
+              className="text-blue-500 line-clamp-1 border-b-blue-500 border-b min16pxMax19px font-semibold"
+              href="https://github.com/nwanoruovictory87-web/GSS-KARSHI-SCHOLL-PROJECT"
+              target="_blank"
+            >
+              https://github.com/nwanoruovictory87-web/GSS-KARSHI-SCHOLL-PROJECT
             </a>
           </span>
         </div>
